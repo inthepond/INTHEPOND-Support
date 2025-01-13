@@ -229,4 +229,18 @@ main {
     .apps-grid {
         grid-template-columns: 1fr;
     }
+}
+
+.privacy-link {
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    transition: all 0.3s ease;
+}
+
+.privacy-link:hover {
+    color: rgba(255, 255, 255, 0.9);
+    border-bottom-color: rgba(255, 255, 255, 0.9);
 } 

@@ -3,185 +3,85 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="../favicon.ico">
+    <link rel="icon" type="image/x-icon" href="../favicon.png">
     <title>Danmaku! - Pixel Art Text Scroller</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            background-color: #000;
-            color: rgba(255, 255, 255, 0.85);
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-            line-height: 1.6;
-            padding: 2rem;
-        }
-
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            background: rgba(255, 255, 255, 0.05);
-            padding: 2rem;
-            border-radius: 15px;
-            backdrop-filter: blur(10px);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-        }
-
-        h1 {
-            text-align: center;
-            margin-bottom: 0.5rem;
-            color: rgba(255, 255, 255, 1);
-            font-weight: 700;
-            letter-spacing: 0.5px;
-        }
-
-        h2 {
-            color: rgba(255, 255, 255, 0.95);
-            margin: 2rem 0 1rem;
-            font-weight: 600;
-        }
-
-        h3 {
-            color: rgba(255, 255, 255, 0.9);
-            margin: 1.5rem 0 0.5rem;
-            font-weight: 500;
-        }
-
-        p {
-            margin-bottom: 1rem;
-            color: rgba(255, 255, 255, 0.85);
-        }
-
-        .subtitle {
-            text-align: center;
-            color: rgba(255, 255, 255, 0.7);
-            font-size: 1.1rem;
-            margin-bottom: 2rem;
-        }
-
-        .app-store-button {
-            display: block;
-            width: 200px;
-            margin: 2rem auto;
-            transition: transform 0.3s ease;
-        }
-
-        .app-store-button:hover {
-            transform: scale(1.05);
-        }
-
-        .feature-list {
-            list-style-type: none;
-            margin: 1rem 0;
-            padding-left: 1rem;
-        }
-
-        .feature-list li {
-            margin-bottom: 0.5rem;
-            position: relative;
-            padding-left: 1.5rem;
-        }
-
-        .feature-list li::before {
-            content: '•';
-            position: absolute;
-            left: 0;
-            color: rgba(255, 255, 255, 0.6);
-        }
-
-        .specs {
-            background: rgba(255, 255, 255, 0.03);
-            padding: 1.5rem;
-            border-radius: 10px;
-            margin: 1.5rem 0;
-        }
-
-        .specs p {
-            margin-bottom: 0.5rem;
-            font-size: 0.9rem;
-        }
-
-        .price {
-            text-align: center;
-            font-size: 1.5rem;
-            color: rgba(255, 255, 255, 1);
-            margin: 2rem 0;
-        }
-
-        .back-link {
-            display: inline-block;
-            color: rgba(255, 255, 255, 0.8);
-            text-decoration: none;
-            margin-top: 2rem;
-            padding: 0.5rem 1rem;
-            border: 1px solid rgba(255, 255, 255, 0.3);
-            border-radius: 5px;
-            transition: all 0.3s ease;
-            font-weight: 500;
-        }
-
-        .back-link:hover {
-            background: rgba(255, 255, 255, 0.1);
-            border-color: rgba(255, 255, 255, 0.5);
-            color: rgba(255, 255, 255, 1);
-        }
-    </style>
+    <link rel="stylesheet" href="../styles.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Danmaku!</h1>
-        <p class="subtitle">Pixel Art Text Scroller</p>
+    <main class="app-info">
+        <nav class="back-nav">
+            <a href="../index.html">← Back to Apps</a>
+        </nav>
         
-        <a href="https://apps.apple.com/app/danmaku/id6740374332" class="app-store-button">
-            <img src="../assets/app-store-badge.svg" alt="Download on the App Store" width="200">
-        </a>
-
-        <h2>Description</h2>
-        <p>Turn your device into a retro pixel message display! Create scrolling text with custom styles. Perfect for concerts, cosplay, or events. Buy once use forever.</p>
-        
-        <p>Danmaku! is a retro-style handheld message display tool that brings your text to life with classic pixel art aesthetics.</p>
-
-        <h2>Key Features</h2>
-        <ul class="feature-list">
-            <li>Clean, pixel art interface design</li>
-            <li>Custom text input with real-time scrolling display</li>
-            <li>Multiple preset text colours: Pure White, Sakura Pink, Cyber Blue, Gold, Violet, and Spirit Mint</li>
-            <li>Adjustable background colours, scroll speed, and font size</li>
-            <li>Fullscreen display mode</li>
-            <li>Save and quick access to frequent messages</li>
-        </ul>
-
-        <h2>Perfect For</h2>
-        <ul class="feature-list">
-            <li>Party interactions</li>
-            <li>Event displays</li>
-            <li>Personal expression</li>
-            <li>Creative photography</li>
-            <li>Flash mob activities</li>
-            <li>Small shop advertisements</li>
-        </ul>
-
-        <div class="specs">
-            <h3>Technical Specifications</h3>
-            <p>Size: 713.7 KB</p>
-            <p>Category: Entertainment</p>
-            <p>Compatibility: Requires iOS/iPadOS 18.1 or later</p>
-            <p>Languages: English</p>
-            <p>Age Rating: 4+</p>
+        <div class="app-header">
+            <img src="../icons/danmaku.png" alt="Danmaku App Icon" class="app-icon">
+            <div class="app-title">
+                <h1>Danmaku!</h1>
+                <h2>Pixel Art Text Scroller</h2>
+            </div>
         </div>
 
-        <h2>INTHEPOND Software As Tools Initiative</h2>
-        <ul class="feature-list">
-            <li>One-off purchase, lifetime value</li>
-            <li>No subscriptions required</li>
-            <li>Lifetime ownership with regular updates</li>
-            <li>No ads, no hidden costs</li>
-        </ul>
+        <div class="app-description">
+            <div class="app-badges">
+                <a href="https://apps.apple.com/app/danmaku/id6740374332" target="_blank">
+                    <img src="../assets/app-store-badge.svg" alt="Download on the App Store">
+                </a>
+            </div>
 
-        <a href="../index.html" class="back-link">← Back to Apps</a>
-    </div>
+            <section class="intro">
+                <p>Turn your device into a retro pixel message display! Create scrolling text with custom styles. Perfect for concerts, cosplay, or events. Buy once use forever.</p>
+                <p>Danmaku! is a retro-style handheld message display tool that brings your text to life with classic pixel art aesthetics.</p>
+            </section>
+
+            <section class="feature-section">
+                <h3>Key Features</h3>
+                <ul>
+                    <li>Clean, pixel art interface design</li>
+                    <li>Custom text input with real-time scrolling display</li>
+                    <li>Multiple preset text colours: Pure White, Sakura Pink, Cyber Blue, Gold, Violet, and Spirit Mint</li>
+                    <li>Adjustable background colours, scroll speed, and font size</li>
+                    <li>Fullscreen display mode</li>
+                    <li>Save and quick access to frequent messages</li>
+                </ul>
+            </section>
+
+            <section class="target-users">
+                <h3>Perfect For</h3>
+                <ul>
+                    <li>Party interactions</li>
+                    <li>Event displays</li>
+                    <li>Personal expression</li>
+                    <li>Creative photography</li>
+                    <li>Flash mob activities</li>
+                    <li>Small shop advertisements</li>
+                </ul>
+            </section>
+
+            <section class="compatibility">
+                <h3>System Requirements</h3>
+                <ul>
+                    <li>iPhone: iOS 15.6 or later</li>
+                    <li>iPad: iPadOS 15.6 or later</li>
+                    <li>Mac: macOS 12.5 or later (Apple M1 chip or later)</li>
+                </ul>
+            </section>
+
+            <section class="software-initiative">
+                <h3>INTHEPOND Software As Tools Initiative</h3>
+                <p>One-off Purchase, Lifetime Value:</p>
+                <ul>
+                    <li>No subscriptions required</li>
+                    <li>Lifetime ownership with regular updates</li>
+                    <li>No ads, no hidden costs</li>
+                </ul>
+            </section>
+
+            <section class="privacy">
+                <h3>Privacy</h3>
+                <p>Danmaku! does not collect any user data. For more details, please check our <a href="../privacy/danmaku.html">Privacy Policy</a>.</p>
+            </section>
+        </div>
+    </main>
+    <script src="../script.js"></script>
 </body>
 </html> 

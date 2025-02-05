@@ -267,4 +267,124 @@ main {
     background: rgba(255, 255, 255, 0.1);
     border-color: rgba(255, 255, 255, 0.5);
     color: rgba(255, 255, 255, 1);
+}
+
+/* App Info Page Styles */
+.app-info {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.back-nav {
+    margin-bottom: 2rem;
+}
+
+.back-nav a {
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+.back-nav a:hover {
+    color: #fff;
+}
+
+.app-header {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.app-header .app-icon {
+    width: 128px;
+    height: 128px;
+    border-radius: 22px;
+}
+
+.app-title h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.app-title h2 {
+    font-size: 1.2rem;
+    color: rgba(255, 255, 255, 0.8);
+    font-weight: normal;
+}
+
+.app-description {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 15px;
+    padding: 2rem;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.app-badges {
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.app-badges img {
+    height: 40px;
+    transition: transform 0.3s ease;
+}
+
+.app-badges img:hover {
+    transform: scale(1.05);
+}
+
+.app-description section {
+    margin-bottom: 2rem;
+}
+
+.app-description section:last-child {
+    margin-bottom: 0;
+}
+
+.app-description h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.app-description p {
+    margin-bottom: 1rem;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.app-description ul {
+    list-style-type: none;
+    padding-left: 1.5rem;
+}
+
+.app-description ul li {
+    margin-bottom: 0.5rem;
+    position: relative;
+}
+
+.app-description ul li::before {
+    content: '•';
+    position: absolute;
+    left: -1.5rem;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+@media (max-width: 768px) {
+    .app-info {
+        padding: 1rem;
+    }
+
+    .app-header {
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+    }
+
+    .app-description {
+        padding: 1.5rem;
+    }
 } 
